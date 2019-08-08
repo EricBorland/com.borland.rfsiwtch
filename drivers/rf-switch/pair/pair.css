@@ -1,0 +1,118 @@
+/* GRID ALIGNMENT */
+.row {
+  display: block;
+  width: 100%;
+}
+.col-1 {
+  display: inline-block;
+  width: calc(10% - 4px);
+}
+.col-2 {
+  display: inline-block;
+  width: calc(20% - 4px);
+}
+.col-3 {
+  display: inline-block;
+  width: calc(30% - 4px);
+}
+.col-4 {
+  display: inline-block;
+  width: calc(40% - 4px);
+}
+.col-5 {
+  display: inline-block;
+  width: calc(50% - 4px);
+}
+.col-6 {
+  display: inline-block;
+  width: calc(60% - 4px);
+}
+.col-7 {
+  display: inline-block;
+  width: calc(70% - 4px);
+}
+.col-8 {
+  display: inline-block;
+  width: calc(80% - 4px);
+}
+.col-9 {
+  display: inline-block;
+  width: calc(90% - 4px);
+}
+.col-10 {
+  display: inline-block;
+  width: calc(100% - 4px);
+}
+
+/* PADDINGS AND MARGINS */
+.padding-xs {
+  padding: 2px;
+}
+.padding-s {
+  padding: 4px;
+}
+.padding-m {
+}
+.padding-l {
+}
+.padding-xl {
+}
+.margin-m {
+  margin: 6px;
+}
+.margin-xl {
+  margin: 16px;
+}
+
+/* GENERAL CLASSES */
+.text-left {
+  text-align: left;
+}
+.tip {
+  font-size: 10px;
+  line-height: 10px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+p {
+  text-align: center;
+}
+input {
+  max-width: calc(100% - 10px);
+  line-height: 16px;
+  border-radius: 2px;
+  padding: 5px 2px;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+/* BUTTONS */
+button.button {
+  min-height: 32px;
+  margin-bottom: 5px;
+}
+button.btn-action {
+  color: white;
+  background: #196698;
+}
+button.btn-succes {
+  color: white;
+  background: #2bd672;
+}
+
+/* CUSTOM ELEMENTS */
+p.signal {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 5px 2px;
+}
+/*
+.col-6 {
+  display: inline-block;
+  width: 45%;
+  padding: 4px;
+}
+*/

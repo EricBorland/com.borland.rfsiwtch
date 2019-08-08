@@ -1,0 +1,61 @@
+{
+  "YES": "Yes",
+  "NO": "No",
+  "DEVICE_NAME": "Songle RF Relay",
+  "NEXT": "Next",
+  "PAIR": {
+    "NUMBER_OF_CHANNELS": {
+      "TITLE": "RF Relay Pairing Wizard",
+      "HOW_MANY_CHANNELS": "To proceed, you must indicate how many channels your device has?",
+      "HOW_MANY_CHANNELS_TIP": "If you're not sure, you can get it by counting the blue switches on your device. For example, in the image shown above, there are 4 channels.",
+      "1_CHANNEL": "1 Channel",
+      "2_CHANNELS": "2 Channels",
+      "3_CHANNELS": "3 Channels",
+      "4_CHANNELS": "4 Channels"
+    },
+    "RECORD_REMOTE": {
+      "TITLE": "Record remote's signal",
+      "HEADLINE": "Do you own a remote control?",
+      "INTRODUCTION": "Then you can record your remote's signal to be reproduced by Homey or be used by flow triggers by pressing the record button below and holding your remote's button. You can also skip this step",
+      "RECORD_SIGNAL": "Record signal",
+      "SKIP": "Skip"
+    },
+    "REMOTE_OR_CUSTOM": {
+      "TITLE": "Remote's vs Custom signal",
+      "INTRODUCTION": "Would you like to use your remote's signal or to create a custom one by Homey?",
+      "REMOTE_DEFINITION": "[BASIC] Use your remote's signal if: <ul><li> You own a remote </li><li> You perfer simpler setup </li><li> Your device doesn't have any state other than on-off </li></ul>",
+      "CUSTOM_DEFINITION": "[ADVANCED] Use a custom signal if: <ul><li> You don't own a remote </li><li> You prefer a better control of your device behaviour through Homey </li><li> Your device has any other state(s) rather than on-off (ie: dim or tilt level) </li></ul>",
+      "REMOTE": "Use remote's signal directly",
+      "CUSTOM": "Use a custom signal instead"
+    },
+    "REMOTE_RECORDED": {
+      "TITLE": "Remote signal recorded",
+      "HEADLINE": "Success!",
+      "INTRODUCTION": "Your remote's signal recorded is shown below"
+    },
+    "CUSTOM_SIGNAL": {
+      "TITLE": "Generate custom signal",
+      "HEADLINE": "Would you like to generate a custom signal?",
+      "INTRODUCTION": "<strong>Only for advanced users</strong><br>Generating a custom signal is recommended for advanced users in one or more of the following scenarios: <ul><li>You don't want your remote to control directly your device but you want your device to be fully controlled by Homey</li><li>Your device has capabilities other than <i>button</i> like <i>dim</i> or <i>tilt_set</i></li><li>You would like to control multiple devices with the same signal</li></ul>"
+    },
+    "SIGNAL_DEFINITION": {
+      "TITLE": "Signal definition",
+      "RANDOM_WORD_BASE": "Refresh word",
+      "PAIR": "Emit for pairing",
+      "WORD_MASK": "Word Mask",
+      "CHANNEL_1": "Channel 1",
+      "CHANNEL_2": "Channel 2",
+      "CHANNEL_3": "Channel 3",
+      "CHANNEL_4": "Channel 4",
+      "REFRESH_MASK": "Refresh word mask",
+      "RECORD_SIGNAL": "Record signal",
+      "TIMEOUT_ERROR_RECORDING": "Recording timeout. Did you press your remote's button?"
+    },
+    "RECORD_SIGNAL": {
+      "SIGNAL_RECORDED": "Signal recorded"
+    },
+    "SUCCESS": {
+      "GREAT": "Let play with them!"
+    }
+  }
+}

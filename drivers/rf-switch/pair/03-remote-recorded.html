@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  Homey.setTitle( __('PAIR.REMOTE_RECORDED.TITLE') );
+  getSettings(setRecordedSignal);
+</script>
+<script src="pair.js"></script>
+<link reL="stylesheet" href="pair.css"></link>
+
+<center>
+  <h1 data-i18n="PAIR.REMOTE_RECORDED.HEADLINE"></h1>
+  <img src="../assets/images/signal.png" width="100%"></img>
+  <p data-i18n="PAIR.REMOTE_RECORDED.INTRODUCTION"></p>
+  <p id="recorded-signal" class="signal"></p>
+  <button class="button" onclick="Homey.nextView()" data-i18n="NEXT"></button>
+</center>

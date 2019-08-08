@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  Homey.setTitle( __('PAIR.SIGNAL_DEFINITION.TITLE') );
+  initSignalDefinition();
+</script>
+<script src="pair.js"></script>
+<link reL="stylesheet" href="pair.css"></link>
+
+<center class="text-left">
+  <h1 data-i18n="PAIR.SIGNAL_DEFINITION.WORD_MASK"></h1>
+  <p class="row">
+    <input class="col-10" id="base" type="number" min="1" max="4">
+  </p>
+  <p class="tip" data-i18n="PAIR.SIGNAL_DEFINITION.RECORD_PROCESS"></p>
+  <p class="row">
+    <button class="col-4" onclick="refresh()" data-i18n="PAIR.SIGNAL_DEFINITION.RANDOM_WORD_BASE"></button>
+    <span class="col-1"></span>
+    <button class="col-5 btn-action" onclick="emit()" data-i18n="PAIR.SIGNAL_DEFINITION.PAIR"></button>
+  </p>
+  <p>
+    <div id="words-container"></div>
+  </p>
+  <p class="row">
+    <button class="button btn-succes col-10" onclick="pair()" data-i18n="NEXT"></button>
+  </p>
+</div>

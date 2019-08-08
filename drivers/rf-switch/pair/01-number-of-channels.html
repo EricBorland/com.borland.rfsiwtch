@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  Homey.setTitle( __('PAIR.NUMBER_OF_CHANNELS.TITLE') );
+</script>
+<script src="pair.js"></script>
+<link reL="stylesheet" href="pair.css"></link>
+<center>
+  <h1 data-i18n="DEVICE_NAME"></h1>
+  <img src="../assets/images/original.jpeg" width="75%"></img>
+  <p data-i18n="PAIR.NUMBER_OF_CHANNELS.INTRODUCTION"></p>
+  <p data-i18n="PAIR.NUMBER_OF_CHANNELS.HOW_MANY_CHANNELS"></p>
+  <p class="tip" data-i18n="PAIR.NUMBER_OF_CHANNELS.HOW_MANY_CHANNELS_TIP"></p>
+  <div class="row">
+    <button class="button col-5" onclick="Homey.emit('setNumberOfChannels', 1)" data-i18n="PAIR.NUMBER_OF_CHANNELS.1_CHANNEL"></button>
+    <button class="button col-5" onclick="Homey.emit('setNumberOfChannels', 2)" data-i18n="PAIR.NUMBER_OF_CHANNELS.2_CHANNELS"></button>
+    <button class="button col-5" onclick="Homey.emit('setNumberOfChannels', 3)" data-i18n="PAIR.NUMBER_OF_CHANNELS.3_CHANNELS"></button>
+    <button class="button col-5" onclick="Homey.emit('setNumberOfChannels', 4)" data-i18n="PAIR.NUMBER_OF_CHANNELS.4_CHANNELS"></button>
+  </div>
+</center>
