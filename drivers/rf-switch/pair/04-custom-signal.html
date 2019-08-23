@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  Homey.setTitle( __('PAIR.CUSTOM_SIGNAL.TITLE') );
+</script>
+<link reL="stylesheet" href="pair.css"></link>
+
+<center>
+  <h1 data-i18n="PAIR.CUSTOM_SIGNAL.HEADLINE"></h1>
+  <p class="text-left" data-i18n="PAIR.CUSTOM_SIGNAL.INTRODUCTION"></p>
+  <div class="row">
+    <div class="col-6">
+      <button class="button" onclick="Homey.emit('skipView', 'done')" data-i18n="NO"></button>
+    </div>
+    <div class="col-6">
+      <button class="button" onclick="Homey.emit('defineSignal')" data-i18n="YES"></button>
+    </div>
+  </div>
+</center>

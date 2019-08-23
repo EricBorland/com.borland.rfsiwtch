@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  Homey.setTitle( __('PAIR.RECORD_REMOTE.TITLE') );
+</script>
+<script src="pair.js"></script>
+<link reL="stylesheet" href="pair.css"></link>
+<center>
+  <h1 data-i18n="PAIR.RECORD_REMOTE.HEADLINE"></h1>
+  <img src="../assets/images/remote.jpg" width="65%"></img>
+  <p data-i18n="PAIR.RECORD_REMOTE.INTRODUCTION"></p>
+  <div class="row">
+    <button class="button col-5" onclick="recordRemoteSignal()" data-i18n="PAIR.RECORD_REMOTE.RECORD_SIGNAL"></button>
+    <button class="button col-5" onclick="Homey.emit('skip', '05-signal-definition')" data-i18n="PAIR.RECORD_REMOTE.SKIP"></button>
+  </div>
+</center>
+

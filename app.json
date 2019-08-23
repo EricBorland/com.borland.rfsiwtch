@@ -1,0 +1,92 @@
+{
+  "id": "com.borland.rfswitch",
+  "version": "0.1.0",
+  "compatibility": ">=2.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "RF Switch"
+  },
+  "description": {
+    "en": "Adds support for generic RF Switch"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Eric Borland",
+    "email": "eric.borland@gmail.com"
+  },
+  "drivers": [{
+    "id": "rf-switch",
+    "name": {
+      "en": "RF Switch"
+    },
+    "class": "remote",
+    "capabilities": [
+      "button",
+      "onoff",
+      "dim"
+    ],
+    "images": {
+        "large": "/drivers/rf-switch/assets/images/large.png",
+        "small": "/drivers/rf-switch/assets/images/small.png"
+    },
+    "icon": "",
+    "rf": {
+      "signal": "RFSwitch"
+    },
+    "pair": [{
+      "id": "01-number-of-channels"
+    }, {
+      "id": "02-record-remote"
+    }, {
+      "id": "03-remote-recorded"
+    }, {
+      "id": "04-custom-signal"
+    }, {
+      "id": "05-signal-definition"
+    }]
+  }],
+  "signals": {
+    "433": {
+      "RFSwitch": {
+        "sof": [
+          316,
+          1082
+        ],
+        "eof": [
+          353,
+          10909
+        ],
+        "words": [
+          [
+            352,
+            1059
+          ],
+          [
+            1060,
+            354
+          ]
+        ],
+        "interval": 10000,
+        "sensitivity": 0.5,
+        "repetitions": 20,
+        "minimalLength": 23,
+        "maximalLength": 23,
+        "cmds": {
+          "toggleCH1": [0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1],
+          "toggleCH2": [0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0],
+          "toggleCH3": [0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,0,0],
+          "toggleCH4": [0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0]
+        }
+      }
+    }
+  }
+}
